@@ -1,0 +1,16 @@
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/DemoApplication.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/configuration/AppConfig.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/configuration/SwaggerConfig.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/controller/PlanetsController.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/controller/StarsController.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/dto/PlanetsDTO.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/dto/StarsDTO.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/exception/InvalidPlanetsException.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/exception/InvalidStarsException.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/model/Planets.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/model/Stars.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/repository/PlanetsRepository.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/repository/StarsRepository.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/service/ApiService.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/service/PlanetsService.java
+/home/pedro-cezar/Documents/project.plataforms/Request.APi.Nasa/demo/src/main/java/com/requestapi/demo/service/StarsService.java
