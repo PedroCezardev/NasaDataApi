@@ -3,9 +3,9 @@ package com.requestapi.demo.model;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
-import org.springframework.data.mongodb.core.mapping.Document;
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
@@ -13,12 +13,13 @@ import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.Setter;
 
-@Document(collection = "Stars") // Definindo como um documento MongoDB
-@Data 
+@Entity
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
+@Table(name = "Stars")
 public class Stars {
     
     @Id
@@ -41,7 +42,7 @@ public class Stars {
 
     private String spectralClass;
 
-    @DBRef
-    private List<Planets> planets; // Lista de planetas associados a esta estrela
+    @OneToMany
+    private List<Planets> planets;
 
 }
