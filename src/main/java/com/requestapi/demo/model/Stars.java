@@ -2,15 +2,17 @@ package com.requestapi.demo.model;
 
 import java.util.List;
 
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.Id;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
+import lombok.Getter;
 import lombok.Setter;
 
 @Entity
@@ -23,7 +25,8 @@ import lombok.Setter;
 public class Stars {
     
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @NonNull
     private String name;
@@ -42,7 +45,6 @@ public class Stars {
 
     private String spectralClass;
 
-    @OneToMany
+    @OneToMany(mappedBy = "star")
     private List<Planets> planets;
-
 }

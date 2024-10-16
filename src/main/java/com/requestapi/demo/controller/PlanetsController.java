@@ -75,7 +75,7 @@ public class PlanetsController {
     }
 
     @DeleteMapping("/delete/{Id}")
-    public ResponseEntity<HttpStatus> deletePlanetsById(@PathVariable String Id) {
+    public ResponseEntity<HttpStatus> deletePlanetsById(@PathVariable Long Id) {
         try {
             planetsService.deleteById(Id);
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
@@ -85,7 +85,7 @@ public class PlanetsController {
     }
 
     @PutMapping("/update/{id}")
-    public ResponseEntity<?> updatePlanets(@PathVariable String id, @RequestBody Planets planetsDetails) {
+    public ResponseEntity<?> updatePlanets(@PathVariable Long id, @RequestBody Planets planetsDetails) {
         try {
             Planets updatedPlanets = planetsService.updatePlanetsById(id, planetsDetails);
             return new ResponseEntity<>(updatedPlanets, HttpStatus.OK);

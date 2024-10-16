@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.requestapi.demo.model.Planets;
 
 @Repository
-public interface PlanetsRepository extends JpaRepository<Planets, String> {
+public interface PlanetsRepository extends JpaRepository<Planets, Long> {
 
     Optional<Planets> findByName(String name);
 

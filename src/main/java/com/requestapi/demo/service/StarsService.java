@@ -61,7 +61,7 @@ public class StarsService {
         return stars;
     }
 
-    public void deleteById(String Id) {
+    public void deleteById(Long Id) {
         if (!starsRepository.existsById(Id)) {
             throw new InvalidStarsException("A estrela com este Id não foi encontrado no sistema.");
         }
@@ -77,7 +77,7 @@ public class StarsService {
         System.out.println("A estrela foi deletada com sucesso!");
     }
 
-    public Stars updateStarsById(String id, Stars starsDetails) {
+    public Stars updateStarsById(Long id, Stars starsDetails) {
 
         if(starsDetails == null) {
             throw new InvalidStarsException("Os detalhes da Estrelas não podem ser nulos.");

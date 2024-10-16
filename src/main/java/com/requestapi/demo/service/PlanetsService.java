@@ -37,7 +37,7 @@ public class PlanetsService {
         return planets;
     }
 
-    public void deleteById(String id) {
+    public void deleteById(Long id) {
         if (!planetsRepository.existsById(id)) {
             throw new InvalidPlanetsException("O planeta com este Id não foi encontrado no sistema.");
         }
@@ -45,7 +45,7 @@ public class PlanetsService {
         System.out.println("O planeta foi deletado com sucesso!");
     }
 
-    public Planets updatePlanetsById(String id, Planets planetsDetails) {
+    public Planets updatePlanetsById(Long id, Planets planetsDetails) {
         if (planetsDetails == null) {
             throw new InvalidPlanetsException("Os detalhes do planeta não podem ser nulos.");
         }

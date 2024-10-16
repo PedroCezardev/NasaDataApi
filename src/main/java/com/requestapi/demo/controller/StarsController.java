@@ -95,7 +95,7 @@ public class StarsController {
     }
     
     @DeleteMapping("/delete/{Id}")
-    public void deleteStarsById(@PathVariable String Id) {
+    public void deleteStarsById(@PathVariable Long Id) {
         try{
             starsService.deleteById(Id);
         } catch (InvalidStarsException e) {
@@ -113,7 +113,7 @@ public class StarsController {
     }
     
     @PutMapping("/update/{id}")
-    public ResponseEntity<?> updateStars(@PathVariable String id, @RequestBody Stars starsDetails) {
+    public ResponseEntity<?> updateStars(@PathVariable Long id, @RequestBody Stars starsDetails) {
         try {
             Stars updatedStars = starsService.updateStarsById(id, starsDetails);
             return ResponseEntity.ok(updatedStars);

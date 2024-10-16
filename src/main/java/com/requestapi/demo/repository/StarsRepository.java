@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
     import com.requestapi.demo.model.Stars;
 
     @Repository
-    public interface StarsRepository extends JpaRepository<Stars, String> {
+    public interface StarsRepository extends JpaRepository<Stars, Long> {
         
         Optional<Stars> findByName(String name);
 
